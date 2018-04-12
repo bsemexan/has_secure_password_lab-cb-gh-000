@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :users
+  resources :sessions
   post '/login' => 'sessions#create'
   root 'application#home'
   # The priority is based upon order of creation: first created -> highest priority.
